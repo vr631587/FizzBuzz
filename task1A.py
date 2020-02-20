@@ -2,8 +2,10 @@ import csv
 
 
 with open("Trails.csv","r") as f:
-    dict1={}
+    list1=[]
     
     data=csv.reader(f)
     for elements in data:
-        if "CONDITION" == "GOOD"
+        list1.append((str(elements[9]),str(elements[1])))
+    print(list1)
+
